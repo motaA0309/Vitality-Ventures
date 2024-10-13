@@ -3,7 +3,8 @@ This app is designed for university students who have moved away from their fami
 
 # Augmented Reality Application
 ## Features
-- Displaying the list of ingredients and the recipe with necessary steps for the user to follow
+- Displaying the list of ingredients
+- The recipe with necessary steps for the user to follow
 - Cooking timer
 - Animated food ingredient characters with tips and encouragment
 - Video streaming to the web application
