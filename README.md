@@ -4,12 +4,14 @@ This app is designed for university students who have moved away from their fami
 # Augmented Reality Application
 ## Features
 - Displaying the list of ingredients and the recipe with necessary steps for the user to follow
-- Timer
-- Animated food ingredient characters
+- Cooking timer
+- Animated food ingredient characters with tips and encouragment
 - Video streaming to mobile application
+- Photo sharing
+- Highlighting fingers from mobile app user
 
 ## How to Use
-- Open the application in Hololens.
+- Open the application "3500_2" in Hololens.
 - Follow the steps in the recipe on the right. Tick the checkbox of each step when it is done.
 - The ingredients are listed on the left.
 - Use the clock button to start the timer when needed.
