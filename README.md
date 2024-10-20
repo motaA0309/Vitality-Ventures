@@ -14,6 +14,7 @@ This app is designed for university students who have moved away from their fami
 ## How to install
 - Connect a Hololens 2 device to the computer with USB.
 - Set the Hololens 2 device to developer mode. Go to Settings -> Update -> For developers. Enable Use developer features.
+- Open the project 3500_2 or 3500_3 in the folder KitchenConnectGlasses with Unity.
 - Open Edit -> Project Settings -> XR Plug-in Management -> Project Validation. In the Validation Rules, select the Windows Icon and click on the Fix all button if it exists.
 - Open File -> Build Settings -> Universal Windows Platform. Click on the Build button and build it in a folder.
 - Open the .sln file generated in the build folder with Visual Studio.
@@ -21,7 +22,7 @@ This app is designed for university students who have moved away from their fami
 - In Visual Studio, open the debug menu on top. Select "Start Without Debugging" to build and run the app on Hololens 2.
 
 ## How to Use
-- Open the application "3500_2" in Hololens.
+- Open the application 3500_2 (Tomato Egg Salad) or 3500_3 (Tomato Mushroom Pasta) in Hololens.
 - Follow the steps in the recipe on the right. Tick the checkbox of each step when it is done.
 - The ingredients are listed on the left. Users can put the ingredients prepared beneath it.
 - The highlighting finger is controlled by the web application users to point out where they want the AR application user to look at (Simulation only).
