@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/kitchen with potato.unity
+    guid: c04383ac7c2ec2f4981ce999497c6790
+  m_configObjects:
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 378ddd1d8ddc3a5449b6bb3214a67d3b, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e220acaf04ec60846a3d3e281052f280, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 11d3219297c302848be06922ff5bad54, type: 2}
