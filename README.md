@@ -19,3 +19,11 @@ This app is designed for university students who have moved away from their fami
 - Use the clock button to start the timer when needed.
 - Characters of ingredients (such as egg and tomato) will provide some hints and encouragment during the cooking process.
 - A congratulation message will pop up when all the steps are done.
+
+# Web Application
+## Features
+- Live stream of the hololens feed 
+- Recipe book & ability to edit recipe steps
+- Photo album page
+## How to Use
+-
