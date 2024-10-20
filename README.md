@@ -1,7 +1,7 @@
 # Vitality-Ventures
 This app is designed for university students who have moved away from their families and are living alone, offering a fun and engaging way to cook at home while staying connected with family or friends. It blends cooking tutorials with interactive social features, making home cooking a shared, joyful experience.
 
-# KitchenConnect Glasses
+# KitchenConnect AR Glasses
 ## Features
 - Displaying the list of ingredients
 - The recipe with necessary steps for the user to follow
@@ -29,7 +29,7 @@ This app is designed for university students who have moved away from their fami
 - Characters of ingredients (such as egg and tomato) will provide some hints and encouragment during the cooking process.
 - A congratulation message will pop up when all the steps are done.
 
-# Web Application
+# KitchenConnect WebApp
 ## Features
 - Live stream of the hololens feed 
 - Recipe book & ability to edit recipe steps
