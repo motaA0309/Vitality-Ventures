@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata: sets the character encoding, viewport settings, and title -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live Streaming</title>
+        <style>
+            /* Styles for the body to center content and set a background */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            /* Container layout settings */
+            .container {
+                max-width: 375px;
+                margin: 0 auto;
+                background-color: white;
+                height: 700px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            /* Header section styling */
+            .header {
+                text-align: center;
+                padding: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                background-color: white;
+                border-bottom: 1px solid #ddd;
+            }
+            /* Video placeholder to maintain aspect ratio */
+            .video-placeholder {
+                position: relative;
+                padding-bottom: 56.25%; 
+                height: 0;
+                margin: 10px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            /* Styles for embedded YouTube iframe */
+            .video-placeholder iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            /* Controls container styling */
+            .controls {
+                display: flex;
+                justify-content: space-around;
+                padding: 10px; 
+                background-color: black;
+                border-top-left-radius: 15px; 
+                border-top-right-radius: 15px; 
+            }
+            /* Control icons styling */
+            .controls img {
+                width: 20px;  
+                height: 20px;  
+                filter: invert(1);
+            }
+            /* Control labels */
+            .controls span {
+                color: white;
+                font-size: 10px; 
+                display: block;
+                text-align: center;
+                margin-top: 3px; 
+            }
+            /* Step information section */
+            .step-info {
+                padding: 15px;
+                background-color: white;
+                border-top: 1px solid #ddd;
+            }
+            /* Step title styling */
+            .step-info strong {
+                font-size: 16px;
+            }
+            /* Step description styling */
+            .step-info p {
+                margin: 0;
+                font-size: 14px;
+                color: #666;
+            }
+            /* Footer container styling */
+            .footer {
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+                background-color: white;
+                border-top: 1px solid #ddd;
+            }
+            /* Footer link styling */
+            .footer a {
+                position: relative;
+                display: inline-block;
+                padding: 10px; 
+            }
+            /* Active footer link indicator */
+            .footer a.active::before {
+                content: '';
+                position: absolute;
+                top: 35px; 
+                left: 20px; 
+                width: 5px; 
+                height: 5px; 
+                border-radius: 50%;
+                background-color: blue; 
+                z-index: 0; 
+            }
+            /* Footer icon size */
+            .footer img {
+                width: 24px;
+                height: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Main container for the page content -->
+
+        <div class="container">
+            <!-- Header section displaying the title -->
+            <div class="header">
+                Live Streaming
+            </div>
+            <!-- Video player placeholder with embedded YouTube iframe -->
+            <div class="video-placeholder">
+                <iframe src="https://www.youtube.com/embed/n1aJ0LxyMUs?autoplay=1&controls=0&modestbranding=1&showinfo=0" 
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <!-- Control panel with icons for mic, sound, camera, and expand -->
+            <div class="controls">
+                <div>
+                    <img src="image/microphone-black-shape.png" alt="Microphone">
+                    <span>Mic</span>
+                </div>
+                <div>
+                    <img src="image/speaker-filled-audio-tool.png" alt="Sound">
+                    <span>Sound</span>
+                </div>
+                <div>
+                    <img src="image/photo-camera-interface-symbol-for-button.png" alt="Camera">
+                    <span>Cam</span>
+                </div>
+                <div>
+                    <img src="image/expand.png" alt="Expand">
+                    <span>Expand</span>
+                </div>
+            </div>
+            <!-- Step information section showing cooking instructions -->
+            <div class="step-info">
+                <div class="step-title">Step 2:</div>
+                <strong>Season the steak:</strong>
+                <p>Sprinkle both sides with salt and pepper, pressing gently to stick.</p>
+            </div>
+            <!-- Footer section with navigation links and icons -->
+            <div class="footer">
+                <a href="index.html" class="active"><img src="image/home.png" alt="Home"></a>
+                <a href="#"><img src="image/video-camera.png" alt="Video"></a>
+                <a href="album.html"><img src="image/gallery.png" alt="Images"></a>
+                <a href="recipe.html"><img src="image/recipe.png" alt="Recipe"></a>
+            </div>
+        </div>
+
+    </body>
+</html>

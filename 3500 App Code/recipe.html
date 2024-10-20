@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata: character encoding, viewport settings, and title -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tomato Salad Recipe</title>
+        <style>
+            /* General styling for the body to center content */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            /* Container styling for layout */
+            .container {
+                max-width: 375px;
+                width: 100%;
+                height: 700px;
+                margin: 0 auto;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            /* Header section styling */
+            .header {
+                text-align: center;
+                padding: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                background-color: white;
+                border-bottom: 1px solid #ddd;
+            }
+            /* Image section styling */
+            .image {
+                width: 100%;
+                border-bottom: 1px solid #ddd;
+            }
+            /* Styling for the recipe image */
+            .image img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            /* Content section styling with scroll support */
+            .content {
+                padding: 15px;
+                flex-grow: 1;
+                overflow-y: auto;
+            }
+            /* Section wrapper styling */
+            .section {
+                margin-bottom: 15px;
+            }
+            /* Section title styling */
+            .section-title {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            /* Section content styling */
+            .section-content {
+                background-color: #e0e0e0;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 14px;
+                color: #333;
+            }
+            /* Individual step styling */
+            .step {
+                display: flex;
+                align-items: flex-start;
+                background-color: #e0e0e0;
+                border-radius: 10px;
+                padding: 10px;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+            /* Step checkbox styling */
+            .step-checkbox {
+                width: 24px; 
+                height: 24px; 
+                border: 2px solid #ddd;
+                border-radius: 50%;
+                margin-right: 10px;
+                background-color: white;
+                flex-shrink: 0;
+            }
+            /* Footer styling with icons */
+            .footer {
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+                background-color: white;
+                border-top: 1px solid #ddd;
+            }
+            /* Footer icon size */
+            .footer img {
+                width: 24px;
+                height: 24px;
+            }
+            /* Footer links styling */
+            .footer a {
+                position: relative;
+                text-decoration: none;
+                color: inherit;
+                padding: 10px; 
+            }
+            /* Active footer link indicator */
+            .footer a.active::before {
+                content: '';
+                position: absolute;
+                top: 35px; 
+                left: 19.5px; 
+                width: 5px; 
+                height: 5px; 
+                border-radius: 50%;
+                background-color: blue; 
+                z-index: 0; 
+            }
+            /* Button styling for edit and next recipe actions */
+            .edit-button, .next-recipe-button {
+                display: block;
+                background-color: #9ACD32;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                border-radius: 10px;
+                text-decoration: none;
+                font-weight: bold;
+                margin: 10px auto;
+                max-width: 300px;
+            }
+            /* Input field styling when editing steps */
+            .step-input {
+                width: 100%;
+                padding: 5px;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Main container for the recipe page -->
+        <div class="container">
+            <!-- Header section for the recipe title -->
+            <div class="header">
+                Tomato Salad Recipe
+            </div>
+            <!-- Image section to display the recipe image -->
+            <div class="image">
+                <img src="image/tomato salad.png" alt="Tomato Salad">
+            </div>
+            <!-- Content section containing ingredients, tools, and steps -->
+            <div class="content">
+                <!-- Ingredients section -->
+                <div class="section">
+                    <div class="section-title">Ingredients to be prepared:</div>
+                    <div class="section-content">
+                        3 eggs, 3 tomatoes, vinegar, salt, pepper
+                    </div>
+                </div>
+                <!-- Tools section -->
+                <div class="section">
+                    <div class="section-title">Tools to be prepared:</div>
+                    <div class="section-content">
+                        Chopping board, Knife, Bowl
+                    </div>
+                </div>
+                <!-- Steps section listing the preparation steps -->
+                <div class="section">
+                    <div class="step">
+                        <div class="step-checkbox"></div>
+                        <div class="step-text">Step 1. Dice tomatoes and chop boiled eggs on the chop board</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-checkbox"></div>
+                        <div class="step-text">Step 2. Mix diced tomatoes and chopped boiled eggs in a bowl</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-checkbox"></div>
+                        <div class="step-text">Step 3. Drizzle with olive oil and vinegar (or lemon juice)</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-checkbox"></div>
+                        <div class="step-text">Step 4. Season with salt and pepper</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-checkbox"></div>
+                        <div class="step-text">Step 5. Toss gently and serve immediately</div>
+                    </div>
+                </div>
+                <!-- Button to edit or create a new recipe -->
+                <a href="#" class="edit-button">Edit/create your own recipe</a>
+                <!-- Button to navigate to the next recipe -->
+                <a href="recipe2.html" class="next-recipe-button">Next Recipe</a>
+            </div>
+            <!-- Footer section with navigation icons -->
+            <div class="footer">
+                <a href="index.html"><img src="image/home.png" alt="Home"></a>
+                <a href="index.html"><img src="image/video-camera.png" alt="Video"></a>
+                <a href="album.html"><img src="image/gallery.png" alt="Images"></a>
+                <a href="recipe.html" class="active"><img src="image/recipe.png" alt="Recipe"></a>
+            </div>
+        </div>
+
+        <!-- JavaScript to handle step editing functionality -->
+        <script>
+            document.querySelector('.edit-button').addEventListener('click', function() {
+                const steps = document.querySelectorAll('.step .step-text');// Get all step elements
+                const button = this;
+                
+                if (button.innerText === "Edit/create your own recipe") {
+                    // Switch to edit mode by replacing step text with input fields
+                    steps.forEach(step => {
+                        const stepText = step.innerText;
+                        const input = document.createElement('input'); // Create input field
+                        input.type = 'text';
+                        input.value = stepText;
+                        input.classList.add('step-input');
+
+                        // Adjust input size based on text length
+                        input.size = stepText.length > 20 ? stepText.length : 20;
+
+                        step.innerHTML = ''; // Clear the step text
+                        step.appendChild(input); // Add input field to step
+                    });
+                    button.innerText = "Save"; // Update button text
+                } else {
+                    // Save updated step text
+                    steps.forEach(step => {
+                        const input = step.querySelector('input'); // Get input field
+                        const updatedText = input.value; // Get new step text
+                        step.innerHTML = updatedText; // Update step with new text
+                    });
+                    button.innerText = "Edit/create your own recipe"; // Revert button text
+                }
+            });
+        </script>
+
+    </body>
+</html>

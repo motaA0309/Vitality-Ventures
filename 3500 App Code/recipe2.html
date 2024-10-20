@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata: Character encoding, viewport settings, and title -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tomato Pasta Recipe</title>
+        <style>
+            /* General styling for the page */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            /* Styling for the container holding the content */
+            .container {
+                max-width: 375px;
+                width: 100%;
+                height: 700px; 
+                margin: 0 auto;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            /* Header image section */
+            .image-header {
+                position: relative;
+            }
+            /* Recipe image styling */
+            .image-header img {
+                width: 100%;
+                height: auto;
+                border-bottom: 1px solid #ddd;
+            }
+            /* Styling for the back button */
+            .back-button {
+                position: absolute; 
+                top: 10px;
+                left: 10px;
+                background-color: rgba(255, 255, 255, 0.8); 
+                border: none;
+                border-radius: 50%;
+                padding: 8px;
+                cursor: pointer;
+                text-decoration: none; 
+                color: inherit;
+                font-size: 18px; 
+            }
+            .edit-button {
+                right: 10px;
+            }
+            /* Header section styling */
+            .header {
+                text-align: center;
+                padding: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                background-color: white;
+                border-bottom: 1px solid #ddd;
+            }
+            /* Main content styling */
+            .content {
+                flex-grow: 1; 
+                box-sizing: border-box; 
+                padding: 15px;
+                overflow-y: auto; 
+                max-height: 550px; 
+            }
+            /* Section styling for ingredients and steps */
+            .section {
+                margin-bottom: 15px;
+            }
+            .section-title {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .section-content {
+                background-color: #e0e0e0;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 14px;
+                color: #333;
+                line-height: 1.5;
+            }
+            /* Styling for individual steps */
+            .step {
+                display: flex;
+                align-items: center;
+                background-color: #e0e0e0;
+                border-radius: 10px;
+                padding: 10px;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+            /* Checkbox styling for steps */
+            .step-checkbox {
+                width: 24px;
+                height: 24px;
+                border: 2px solid #ddd;
+                border-radius: 50%;
+                margin-right: 10px;
+                background-color: white;
+                flex-shrink: 0;
+            }
+            /* Styling for the save/edit button */
+            .save-button {
+                display: block;
+                background-color: #9ACD32;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 15px auto;
+                max-width: 300px;
+                font-size: 14px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            /* Footer navigation styling */
+            .footer {
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+                background-color: white;
+                border-top: 1px solid #ddd;
+                width: 100%;
+                position: relative; 
+                box-sizing: border-box; 
+            }
+            .footer img {
+                width: 24px;
+                height: 24px;
+            }
+            /* Input styling for editable steps */
+            .step-input {
+                width: 100%;
+                padding: 5px;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header with an image and back button -->
+            <div class="image-header">
+                <img src="image/tomato-pasta.png" alt="Tomato Pasta">
+                <a class="back-button" href="recipe.html">←</a>
+            </div>
+            <!-- Recipe title section -->
+            <div class="header">
+                Tomato Pasta Recipe
+            </div>
+            <!-- Main content with ingredients and steps -->
+            <div class="content">
+                <div class="section">
+                    <div class="section-title">Ingredients</div>
+                    <div class="section-content">
+                        <ul>
+                            <!-- List of ingredients -->
+                            <li>2 pounds tomatoes</li>
+                            <li>1 (8 ounce) package angel hair pasta</li>
+                            <li>1 tablespoon olive oil, or as needed</li>
+                            <li>4 cloves crushed garlic</li>
+                            <li>1 tablespoon tomato paste</li>
+                            <li>salt to taste</li>
+                            <li>ground black pepper to taste</li>
+                            <li>1 tablespoon chopped fresh basil</li>
+                            <li>¼ cup grated Parmesan cheese</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Steps:</div>
+                    <!-- Individual cooking steps -->
+                    <div class="step">
+                        <div class="step-checkbox"></div>
+                        <div class="step-text">Step 1. Peel the skin off tomatoes and cut into small pieces.</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-checkbox"></div>
+                        <div class="step-text">Step 2. Bring a large pot of lightly salted water to a boil, 4 to 5 minutes.</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-checkbox"></div>
+                        <div class="step-text">Step 3. Heat olive oil in a large skillet or pan. Stir in tomato paste. Immediately stir in the tomatoes, salt, and pepper.</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-checkbox"></div>
+                        <div class="step-text">Step 4. Drain pasta, do not rinse in cold water. Toss with a bit of olive oil, then mix into the sauce.</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-checkbox"></div>
+                        <div class="step-text">Step 5. Reduce heat as low as possible. Keep warm, uncovered, for about 10 minutes when it is ready to serve.</div>
+                    </div>
+                </div>
+                <!-- Edit/save button -->
+                <a href="#" class="save-button">Edit Steps</a>
+            </div>
+            <!-- Footer navigation icons -->
+            <div class="footer">
+                <a href="index.html"><img src="image/home.png" alt="Home"></a>
+                <a href="index.html"><img src="image/video-camera.png" alt="Video"></a>
+                <a href="album.html"><img src="image/gallery.png" alt="Images"></a>
+                <a href="recipe.html"><img src="image/recipe.png" alt="Recipe"></a>
+            </div>
+        </div>
+
+        <script>
+            // Handle the save/edit button click event
+            document.querySelector('.save-button').addEventListener('click', function() {
+                const steps = document.querySelectorAll('.step .step-text'); // Get all step elements
+                const button = this;
+
+                if (button.innerText === "Edit Steps") {
+                    // Switch to edit mode
+                    steps.forEach(step => {
+                        const stepText = step.innerText;
+                        const input = document.createElement('input'); // Create input field
+                        input.type = 'text';
+                        input.value = stepText;
+                        input.classList.add('step-input');
+
+                        // Adjust input size based on text length
+                        input.size = stepText.length > 20 ? stepText.length : 20;
+
+                        step.innerHTML = ''; // Clear current step text
+                        step.appendChild(input); // Add input field
+                    });
+                    button.innerText = "Save";
+                } else {
+                    // Save the edited steps
+                    steps.forEach(step => {
+                        const input = step.querySelector('input');
+                        const updatedText = input.value; // Get the new text
+                        step.innerHTML = updatedText; // Update the step with new text
+                    });
+                    button.innerText = "Edit Steps";
+                }
+            });
+        </script>
+
+    </body>
+</html>
