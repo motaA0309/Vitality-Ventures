@@ -26,5 +26,16 @@ This app is designed for university students who have moved away from their fami
 - Recipe book & ability to edit recipe steps
 - Photo album page
 ## How to Use
+- Open Microsoft hololens application and choose to the live stream option
+- Leave this open on the screen
 - Open OBS or an equivalent streaming device, and choose to stream to Youtube
-- Once the stream is active copy this part of the URL
+
+- On a diffrent computer -
+- Once the stream is active copy this part of the youtube URL following the part "v="
+- For this link https://www.youtube.com/watch?v=9P_xmUdbeus the ID would be "9P_xmUdbeus"
+- --- Find this part of the code in index HTML and replace the ID after "embed/" and before "?" with the ID attained in the previous step ---
+- <div class="video-placeholder">
+        <iframe src="https://www.youtube.com/embed/[INSERT ID HERE]?autoplay=1&controls=0&modestbranding=1&showinfo=0" 
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>  
+- Now when you open this webpage it will receive the stream feed from youtube of the hololens app. 
