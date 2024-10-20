@@ -26,4 +26,5 @@ This app is designed for university students who have moved away from their fami
 - Recipe book & ability to edit recipe steps
 - Photo album page
 ## How to Use
--
+- Open OBS or an equivalent streaming device, and choose to stream to Youtube
+- Once the stream is active copy this part of the URL
