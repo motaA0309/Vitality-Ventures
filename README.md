@@ -29,6 +29,7 @@ This app is designed for university students who have moved away from their fami
 - Use the clock button to start the timer when needed.
 - Characters of ingredients (such as egg and tomato) will provide some hints and encouragment during the cooking process.
 - A congratulation message will pop up when all the steps are done.
+- Look at your wrist. When the Windows icon appears, click it, and a menu window will pop up. Click the camera button, and you can take a screenshot of the current screen by completing the prompted gesture.
 
 # KitchenConnect WebApp
 ## Features
